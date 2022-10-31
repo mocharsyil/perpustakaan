@@ -48,6 +48,22 @@ app.get('/pinjam', (req, res) => {
         res.render('pinjam.ejs');
     });
 
+app.get('/kelolab', (req, res) => {
+        res.render('kelolaBuku.ejs');
+    });
+
+app.get('/kelolap', (req, res) => {
+        res.render('kelolaPeminjaman.ejs');
+    });
+
+app.get('/status', (req, res) => {
+        res.render('statusPeminjaman.ejs');
+    });
+
+app.get('/list', (req, res) => {
+        res.render('listAnggota.ejs');
+    });
+
 app.use(express.static('public'));
 
 app.listen(port, () => {

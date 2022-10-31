@@ -64,6 +64,10 @@ app.get('/list', (req, res) => {
         res.render('listAnggota.ejs');
     });
 
+app.get('/admin', (req, res) => {
+        res.render('admin.ejs');
+    });
+
 app.use(express.static('public'));
 
 app.listen(port, () => {
